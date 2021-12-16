@@ -1,10 +1,65 @@
 body{
   background: url("pattern-3288824_960_720.jpg") no-repeat center center fixed ;
   background-size: cover;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 #formularet{
-  display: flexbox;
+  background-color: #781D42;
+
+  position: relative;
+  display: flex;
+  
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
+  width: min-content;
+  margin: paddipx;
+  
+}
+.inputbox{
+  padding: 5px;
+  margin:5px 10px ;
+  
+  justify-content: center;
+
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #781D42;
+  color: #F0D290;
+  padding: 40px;
+  margin: 0%;
+}
+
+
+#footer-list{
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 10px;
+  text-decoration: none;
+
+}
+#footer-list a {
+  color: #F0D290;
+}
+
+.copyright{
+  display: center;
+  text-align: center;
+  font-size: small;
+}
+
+#Tack {
+  background-color:#781D42;
+  color:#F0D290;
+  font: 20px sans-serif;
 }

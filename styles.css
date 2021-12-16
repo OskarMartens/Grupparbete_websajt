@@ -1,0 +1,10 @@
+body{
+  background: url("pattern-3288824_960_720.jpg") no-repeat center center fixed ;
+  background-size: cover;
+
+}
+
+#formularet{
+  display: flexbox;
+  justify-content: center;
+}

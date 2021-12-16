@@ -1,0 +1,47 @@
+body{
+    background-color: #A3423C;
+    color: #F0D290;
+}
+/******    Sektionen som innehåller navbar     *******/
+#headerSection{
+    background-image: url("images/StarsBackground.jpg");
+    background-position: center center;
+    background-size: 100% auto;
+    min-height: 100px;
+    text-align: center;
+}
+/****         En glow effekt på alla a element i headern  ****/
+#headerSection a:hover {
+    text-shadow: 0px 8px 8px #781D42; 
+}
+/*****    Gör texten i headern tjockare för att synas bättre   **********/
+#headerSection a{
+    color: #F0D290;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #781D42;
+    color: #F0D290;
+    padding: 40px;
+}
+
+
+#footer-list{
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 10px;
+    text-decoration: none;
+
+}
+#footer-list a {
+    color: #F0D290;
+}
+
+.copyright{
+    display: center;
+    text-align: center;
+    font-size: small;
+}

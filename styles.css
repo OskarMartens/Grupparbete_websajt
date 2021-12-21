@@ -19,13 +19,18 @@ body{
     color: #F0D290;
     font-weight: 500;
 }
-
+#navbarBtn:active{
+    outline-color: #781D42;
+}
 footer{
     background-color: #781D42;
     color: #F0D290;
     padding: 40px;
 }
-
+#navbarBtn {
+    border-color: #F0D290;
+    background-color: #781D42;
+}
 
 #footer-list{
     display: flex;

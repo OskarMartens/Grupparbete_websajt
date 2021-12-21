@@ -6,18 +6,52 @@ body{
   justify-content: center;
   
 }
+.header{
+  box-sizing: inherit;
+  display: block;
+  
+  width: 100%;
+  
+  
+
+}#headerSection{
+  background-color: #C37B89;
+  color: #D1E8E4;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+}
+.header-left{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position:absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#loggan{
+  display: inline-block;
+  vertical-align: middle;
+  width: 96px;
+  height: 54px;
+  
+  
+}
+.grid-container{
+  background: url("americana-g6d0d6e759_1280.png")no repeat center;
+}
 
 #formularet{
   background-color: #781D42;
 
-  position: relative;
-  display: flex;
+  position:none;
+  displa
   
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   width: min-content;
-  margin: paddipx;
+  margin:;
   
 }
 .inputbox{

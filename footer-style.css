@@ -1,0 +1,31 @@
+body{
+    background-color: #A3423C;
+    color: #F0D290;
+}
+
+footer{
+    background-color: #781D42;
+    color: #F0D290;
+    padding: 40px;
+}
+
+
+#footer-list{
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 10px;
+    text-decoration: none;
+
+}
+#footer-list a {
+    color: #F0D290;
+}
+
+.copyright{
+    display: center;
+    text-align: center;
+    font-size: small;
+}
+

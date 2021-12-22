@@ -74,6 +74,7 @@ footer{
 .header{
     background-image: url(images/HeaderRip.png);
     min-height: 165px;
+
   }
   #header-wide{
     top: 0;
@@ -158,6 +159,14 @@ footer{
     width: 70%;
     padding: 0 30px;
     box-sizing: border-box;
+  }
+  .frontimg{
+    margin-bottom: 30px;
+    height: 350px;
+    width: 100%;
+    align-self: flex-start;
+    background-image: url("images/Inkedhilma-af-klint-utvald-2048x1152_LI.jpg");
+    background-size: cover;
   }
   #sidebar {
     float: left;

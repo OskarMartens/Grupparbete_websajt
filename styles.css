@@ -94,13 +94,24 @@
     background-image: url("images/Inkedhilma-af-klint-utvald-2048x1152_LI.jpg");
     background-size: cover;
   }
-  #sidebar {
+  /* #sidebar {
     float: left;
     width: 30%;
     padding: 10px;
     border-right: 1px solid darkgray;
     box-sizing: border-box;
+  } */
+ 
+
+
+  #nolaForm-form{
+    background: url(images/americana-g10748c709_1280.png) no-repeat;
   }
+
+  textarea{
+    resize: none;
+  }
+  
   @media (max-width: 600px) {
     #main,
     #sidebar {

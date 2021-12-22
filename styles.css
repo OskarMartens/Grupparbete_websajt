@@ -85,6 +85,14 @@
     padding: 0 30px;
     box-sizing: border-box;
   }
+  .frontimg{
+    margin-bottom: 30px;
+    height: 350px;
+    width: 100%;
+    align-self: flex-start;
+    background-image: url("images/Inkedhilma-af-klint-utvald-2048x1152_LI.jpg");
+    background-size: cover;
+  }
   #sidebar {
     float: left;
     width: 30%;

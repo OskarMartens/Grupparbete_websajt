@@ -11,66 +11,130 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </head>
   <body>
   
-    <div class="header">
-      <div class="header-left"> <img id="loggan" src="placeholder-logga.png" alt=""> </div>
-    <section id="headerSection">
-      <nav class="navbar navbar-expand-lg navbar-light shadow-5-strong">
-        <div class="container-fluid">
-          <a class="navbar-brand me-4" id="companyText" href="#">
-            <h2><strong>NOLA</strong></h2>
-          </a>
-          
-          <button
-            class="navbar-toggler"
-            id="navbarBtn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-              
-                <a class="nav-link active"  aria-current="page" href="#">Hem</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Kontakt</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Om oss</a
-                >
-              </li>
-            </ul>
-          </div>
+    <div class="header" id="header-wide">
+      <header class="headerClass">
+        <div class="headerIconDiv">
+          <img
+            src="images/logo.png"
+            width="75"
+            height="100"
+            alt="#"
+            id="logo"
+          />
         </div>
-      </nav>
-    </section>
-  </div>
+        
+        <div class="headerLinksDiv">
+          <a href="#">Portfolio</a>
+          <a href="#">Kontakt</a>
+          <a href="#">Om Oss</a>
+        </div>
+      </header>
+      
+    </div>
+
+    <div class="header" id="header-small">
+      <div class="headerIconSmallDiv">
+        <img src="images/logo.png" width="75" height="100" alt="#" id="logo" />
+      </div>
+
+      
+      <span class="toggler-span" onclick="openNav()">
+      
+        <div class="toggler">
+          
+          <div class="barTop"></div>
+          <div class="barMiddle"></div>
+          <div class="barBottom"></div>
+        </div>
+    </div>
+    <span>
+
+    <div id="myNav" class="overlay">
+      <div class="closeBtnDiv">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &times;</a>
+      </div>
+
+      <div class="overlay-content">
+        <a href="#">Portfolio</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Om oss</a>
+      </div>
+    </div>
+
+    <main role="main" class="bd-masthead">
+      <div class="flexbox-container">
+        <aside id="sidebar">
+          <p>
+            Lorem ipsum doloLorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur
+          </p>
+        </aside>
+        <section id="main">
+          <h2>Main section title</h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <br /><br /><br /><br /><br /><br /><br /><br />
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <br /><br /><br /><br /><br /><br /><br /><br />
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <br /><br /><br /><br /><br /><br /><br /><br />
+        </section>
+      </div>
+    </main>
+
     
-    
-    
-    
-    
-    <footer>
+     <footer>
       <nav>
         <ul id="footer-list">
           <li><a href="<!-- Toppen av sidan -->">Top</a></li>

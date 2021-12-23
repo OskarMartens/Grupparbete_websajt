@@ -149,12 +149,12 @@
     background-color: black;
     color: darkgray;
     padding: 40px;
-    margin-top: auto;
-    position: absolute;
+    margin-top: 16px;
     left: 0;
     bottom: 0;
     width: 100%;
     overflow: hidden;
+    
   }
   .copyright{
     display: center;

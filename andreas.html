@@ -15,7 +15,7 @@
     <script src="script.js"></script>
 
 </head>
-<body>
+<body style="background: linear-gradient(180deg, rgba(2,0,36,0.9002320185614849) 0%, rgba(51,6,113,1) 19%, rgba(0,97,255,0.494199535962877) 83%)"> 
   
     <div class="header" id="header-wide">
       <header class="headerClass">
@@ -76,9 +76,9 @@
         <div class="andreasFlex">
             
             <div style="display: flex; justify-content: center;">
-                <div class="picture" style="display: flex; align-items: center; justify-content: center; border-style:solid; border-color: rgba(41, 54, 170, 0.986); background-color: darkgrey; width: 200px; height: 250px;">  
+                <div class="picture" style="display: flex; align-items: center; justify-content: center; background-color: darkgrey; width: 200px; height: 250px; ">  
                     <img src="images/logo.png" width="150" height="200" alt="#" id="logo"/></div>
-                <div class="textBox1" style="background-color: lightgrey; margin-left: 16px; margin-bottom: 16px; padding: 20px;">
+                <div class="textBox1" style="background-color: lightgrey; margin-left: 16px; margin-bottom: 16px; padding: 20px;  box-shadow: 0px 0px 15px black; border-radius: 10px;">
                     <h2>Andreas Sjödén</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
                            Accusantium deserunt ut aperiam obcaecati quidem rem,<br>
@@ -97,7 +97,7 @@
 
             <div style="display: flex; justify-content: center;">
                 
-                <div class="textBox2" style="background-color: lightgrey; margin-bottom: 16px; margin-left: 16px; padding: 20px;">
+                <div class="textBox2" style="background-color: lightgrey; margin-bottom: 16px; margin-left: 16px; padding: 20px;  box-shadow: 0px 0px 15px black; border-radius: 10px;">
                     <h2>RUBRIK 2</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
                            Accusantium deserunt ut aperiam obcaecati quidem rem,<br>
@@ -122,33 +122,112 @@
                       Obcaecati facilis minima quibusdam?</p>
                 </div>
             </div>
-            
+            <div class="skillsHeader" style="display: flex; flex-direction: column; align-items: center; margin-top: 16px; margin-bottom: 8px;">
+              <h2 style="font-weight: bold;">SKILLS</h2>
+              <div class="line" style="height: 5px; width: 100%; background-color: black;"></div>
+            </div>
+            <!-- div som innehåller alla diagrammen-->
             <div style="display: flex; justify-content: center;">
-                
-                <div class="diagramSkillContainer" style="margin: 8px; display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 0px 0px 15px lightgray;">
+                <!-- divar för varje enskilt diagram med rubrik och procent -->
+                <div class="diagramSkillContainer" style="margin: 16px; display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 0px 0px 15px black; border-radius: 10px;">
                   <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">JAVA</h2>
                   <div class="diagram1" style="height: 100px; box-shadow: 0px 0px 10px; width: 100px; border-radius: 50%; background: conic-gradient(lightgrey 0.00% 15.00%, rgba(192, 7, 7, 0.87) 0.00% 85%)"></div>
                   <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">85%</h2>
                 </div>
 
-                <div class="diagramSkillContainer" style="margin: 8px;display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 0px 0px 15px lightgray;">
+                <div class="diagramSkillContainer" style="margin: 16px;display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 0px 0px 15px black; border-radius: 10px;">
                   <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">SQL</h2>
                   <div class="diagram2" style="height: 100px; box-shadow: 0px 0px 10px; width: 100px; border-radius: 50%; background: conic-gradient(lightgrey 0.00% 55.00%, rgba(192, 7, 7, 0.87) 0.00% 45%)"></div>
                   <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">45%</h2>
                 </div>
 
-                <div class="diagramSkillContainer" style="margin: 8px; display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 0px 0px 15px lightgray;">
+                <div class="diagramSkillContainer" style="margin: 16px; display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 0px 0px 15px black; border-radius: 10px;">
                   <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">HTML/CSS</h2>
                   <div class="diagram3" style="height: 100px; box-shadow: 0px 0px 10px; width: 100px; border-radius: 50%; background: conic-gradient(lightgrey 0.00% 68.00%, rgba(192, 7, 7, 0.87) 0.00% 32%)"></div>
                   <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">32%</h2>
                 </div>
 
-
-<!--                 <div class="diagram2" style="margin-bottom: 16px; margin-left: 8px; margin-right: 8px; padding: 20px; height: 100px; width: 100px; border-radius: 50%; background: conic-gradient(rgb(0, 110, 255) 60%, lightgrey 0.00% 0.55%)">
-                </div>
-                <div class="diagram3" style="margin-bottom: 16px; margin-left: 8px; padding: 20px; height: 100px; width: 100px; border-radius: 50%; background: conic-gradient(rgb(0, 110, 255) 0.00% 20%, lightgrey 0.00% 0.55%)">
-                </div> -->
             </div>
+
+
+            <div style="display: flex; flex-direction: column;">
+
+              <div style ="display: flex; justify-content: center;">
+                <!-- div som innehåller progressbar och text ovanför-->
+              <div class ="skillBar1" style="display:flex;flex-direction: column; width: fit-content; margin-right: 16px; margin-bottom: 16px;">
+                <!-- div för text ovanför progressbar -->
+                <div class="languageProgressText" style="display: flex; justify-content: space-between;">
+                  <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">Python</h5>
+                  <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">25%</h5>
+                </div>
+                <!-- div för själva progressbaren-->
+                <div class="progressBarBorder" style="width: 150px; height: 20px; border-style: solid; border-radius: 20px;">
+                  <div class="phytonBar" style="height: 100%; width: 25%; background-color:rgba(192, 7, 7, 0.87); border-radius: 20px;"></div>
+                </div>
+
+              </div>
+              <!-- div som innehåller progressbar och text ovanför-->
+            <div class ="skillBarTitle2" style="display:flex;flex-direction: column; width: fit-content;">
+              <!-- div för text ovanför progressbar -->
+              <div class="languageProgressText" style="display: flex; justify-content: space-between;">
+
+                <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">C#</h5>
+                <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">46%</h5>
+
+              </div>
+              <!-- div för själva progressbaren-->
+              <div class="progressBarBorder" style="width: 150px; height: 20px; border-style: solid; border-radius: 20px;">
+                <div class="c#Bar" style="height: 100%; width: 46%; background-color:rgba(192, 7, 7, 0.87); border-radius: 20px;"></div>
+              </div>
+
+            </div>
+
+            
+
+              </div>
+
+
+              <div style ="display: flex; justify-content: center;">
+                
+                <div class ="skillBarTitle1" style="display:flex;flex-direction: column; width: fit-content; margin-right: 16px;">
+    
+                  <div class="languageProgressText" style="display: flex; justify-content: space-between;">
+    
+                    <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">Vacation</h5>
+                    <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">95%</h5>
+    
+                  </div>
+    
+                  <div class="progressBarBorder" style="width: 150px; height: 20px; border-style: solid; border-radius: 20px;">
+                    <div class="vacationBar" style="height: 100%; width: 95%; background-color:rgba(192, 7, 7, 0.87); border-radius: 20px;"></div>
+                  </div>
+    
+                </div>
+    
+                <div class ="skillBarTitle2" style="display:flex;flex-direction: column; width: fit-content;">
+    
+                  <div class="languageProgressText" style="display: flex; justify-content: space-between;">
+    
+                    <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">Coffee</h5>
+                    <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">79%</h5>
+    
+                  </div>
+                  
+                  <div class="progressBarBorder" style="width: 150px; height: 20px; border-style: solid; border-radius: 20px;">
+                    <div class="coffeeBar" style="height: 100%; width: 79%; background-color:rgba(192, 7, 7, 0.87); border-radius: 20px;"></div>
+                  </div>
+    
+                </div>
+    
+                
+    
+                  </div>
+
+
+            </div>
+
+
+
         </div>
       </div>
     </main>

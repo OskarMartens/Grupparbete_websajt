@@ -1,274 +1,105 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+/*BODY STYLE*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    padding: 0px;
+}
+/*HEADER STYLES*/
 .header{
     background-image: url(images/HeaderRip.png);
     min-height: 165px;
-
-  }
-  #header-wide{
+}
+#header-wide{
     top: 0;
     position: fixed;
     width: 100%;
     transition: top 0.6s;
-  }
-  .headerIconDiv{
-    margin-left: 2%;
-    margin-top: 0.5%; 
-  }
-  .headerClass{
+}
+.headerClass{
     display: flex;
     flex-direction: row;
-  
-  }
-  #header-small{
+}
+.headerIconDiv{
+    margin-left: 2%;
+    margin-top: 0.5%; 
+}
+.headerIconDiv img{
+    height: 80px;
+    object-fit: contain;
+}
+.headerLinksDiv{
+    margin-top: 1.9%;
+    margin-left: 1%;
+}
+.headerLinksDiv a{
+    margin-left: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 0.75em;
+}
+.headerLinksDiv a:hover {
+    background-size: 100px;
+    color: white;
+    opacity: 80%;
+}
+#header-small{
     top: 0;
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 100%;
     transition: top 0.6s;
-  }
-  .headerIconSmallDiv{
+}
+.headerIconSmallDiv{
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 0.5%; 
-  }
-
-  .toggler{
+}
+.headerIconSmallDiv img{
+    height: 80px;
+    object-fit: contain;
+}
+/*HAMBURGER MENU STYLE*/
+.toggler{
     margin-right: 2%;
     margin-top: 2%;
     height:fit-content;
     width: fit-content;
     border-style: solid;
     border-radius: 5px;
-  }
-  
-  .toggler-span{
-      margin-right: 2%;
-      margin-top: 2%;
-  }
-  .toggler:hover{
+} 
+.toggler-span{
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.toggler:hover{
     background-color: #000000;
     background-size: 200px;
-  }
-  .barTop, .barMiddle, .barBottom {
+}
+.barTop, .barMiddle, .barBottom {
     width: 35px;
     height: 5px;
     background-color: darkgrey;
     margin: 6px 6px;
     transition: 0.4s;
     border-radius: 25px;
-  }
-  .toggler:hover .barTop, .toggler:hover .barBottom{
+}
+.toggler:hover .barTop, .toggler:hover .barBottom{
     width: 20px;
     margin-left: 45%;
-  }
-  
-  
-  .headerLinksDiv{
-    margin-top: 1.9%;
-    margin-left: 1%;
-  }
-  .headerLinksDiv a{
-  margin-left: 16px;
-  text-decoration: none;
-  color: white;
-  padding: 0.75em;
-  }
-  .headerLinksDiv a:hover {
-    background-size: 100px;
-    text-shadow: 0 0 30px #ff80ed;
-    color: white;
-  }
-  
-  .casesimg{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 700px;
-    background-image: url(images/pl-18-g210mub-Af_Klint_Svanen_nr12_1914.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    padding-top: 30px;
-
-  }
-  .frontimg{
-    margin-bottom: 0px;
-    height: 420px;
-    width: 100%;
-    align-self: flex-start;
-    background-image: url("images/Inkedhilma-af-klint-utvald-2048x1152_LI.jpg");
-    background-size: cover;
-  }
-  .first-section{
-    display: flex;
-    flex-direction: column;
-    background-image: url(images/HaK537.jpg);
-    background-size: cover;
-    padding: 100px;
-
-  }
-  .textbox-frontpage{
-    padding: 50px;
-    font-size: 70px;
-    text-align: center;
-    text-decoration: dotted;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-  }
-  
-  
-  ul {
-    max-width: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
-.self-pages{
-    max-width: 95%;
-    display: flex;
-}
-
-.li1 {
-    height: 40vh;
-    flex-grow: 1;
-    list-style: none;
-    margin: 15px;
-    background-color: #ffb980;
-}
-
-img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-    
-}
-img:hover{
-  opacity: 0.6;
-}
-li:last-child {
-    flex-grow: 10;
-    opacity: 0;
-}
-
-  #sidebar {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    border-right: 1px solid darkgray;
-    box-sizing: border-box;
-  } 
- 
-  
-  .kontaktSection{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    
-    background-image: url(images/americana-g10748c709_1280.png);
-    background-size: cover;
-    padding: 100px;
-    
-
-  }
-  
-
-  #nolaForm-form{
-    background-color: bisque;
-    padding: 5px;
-    border: purple 1px solid;
-    margin-left: 10px;
-  }
-
-  #nolaForm-message{
-    resize: none;
-  }
-  .contactInfo{
-    background-color: black;
-    color: white;
-    font-family: cursive;
-    padding: 5px;
-  
-  }
-
-
-  
-  @media (max-width: 600px) {
-    #main,
-    #sidebar {
-      width: 100%;
-      float: none;
-      border: none;
-    }
-    #header-wide{
-      display: none;
-    }
-    .frontimg{
-      margin-bottom: 0px;
-      height: 420px;
-      width: 100%;
-      background-image: url("images/Inkedhilma-af-klint-utvald-2048x1152_LI.jpg");
-      background-size: cover;
-      background-position: center;
-    }
-  
-  }
-  @media (min-width: 600px){
-    #header-small{
-      display: none;
-    }
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
-    background-color: darkgray;
-    color: black;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  html{
-    position: relative;
-    min-height: 100%;
-  }
-  #footer-list{
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 10px;
-    text-decoration: none;
-  
-  }
-  #footer-list a {
-    color: darkgray;
-  }
-  footer{
-    background-color: black;
-    color: darkgray;
-    padding: 40px;
-    margin-top: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
-  }
-  .copyright{
-    display: center;
-    text-align: center;
-    font-size: small;
-  }
-    
-  .overlay {
+/*HAMBURGER MENU WHEN PUSHED, WINDOW STYLE*/
+.overlay {
     height: 0%;
     width: 100%;
     position: fixed;
@@ -279,30 +110,286 @@ li:last-child {
     background-color: rgba(0,0,0, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
-  }
-  .closeBtnDiv{
+}
+.closeBtnDiv{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-  }
-  
-  
-  .overlay-content {
+}
+.overlay-content{
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-  }
-  
-  .overlay a {
+}
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
+}
+/*MAIN CONTAINER STYLE*/
+.flexbox-container{
+    display: flex;
+    flex-direction: column;
+}
+/*FIRST "LOGO" IMAGE STYLE*/
+.front-img{
+    margin-bottom: 0px;
+    height: 500px;
+    width: 100%;
+    align-self: flex-start;
+    background-image: url("images/Inkedhilma-af-klint-utvald-2048x1152_LI.jpg");
+    background-size: cover;
+}
+/*FIRST SECTION AFTER "LOGO" IMAGE IN MAIN CONTAINER STYLE*/
+.first-section{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.first-section p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*BUTTON STYLE FOR BUTTON IN FIRST SECTION*/
+.button-52 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button-52:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+.button-52:hover:after {
+    top: 0px;
+    left: 0px;
+}
+/*STYLE FOR LINK*/
+.textbox-link{
+    padding: 10px;
+    font-size: 70px;
+    text-align: center;
+    text-decoration: dotted;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-top: 50px;    
+}
+.textbox-link a{
+    text-decoration: none;
+    color: #000000;
+}
+/*CONTAINER STYLE FOR CASE GRID*/
+.cases-container{
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+/*GRID STYLE FOR CASE IMAGES*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+.column img {
+    background-color: #ffe54c;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%; 
+    border-radius: 3px;
+}
+.column img:hover{
+    opacity: 50%; 
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 800px;
+    background-image: url(images/pl-18-g210mub-Af_Klint_Svanen_nr12_1914.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30px;
+
   }
-  
+#portfolio1,#portfolio2,#portfolio3,#portfolio4{
+    flex: 20%;
+    max-width: 25%;
+    position: relative;
+}
+#portfolio1 img{
+    border-radius: 200px;
+    margin-top: 50px;
+}
+#portfolio2 img{
+    border-radius: 200px;
+    margin-top: 50px;
+}
+#portfolio3 img{
+    border-radius: 200px;
+    margin-top: 50px;
+}
+#portfolio4 img{
+    border-radius: 200px;
+    margin-top: 50px;
+}
+.centered {
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
+ /*STYLE FOR CONTACT SITE!*/ 
+.kontaktSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
+#nolaForm-form{
+    text-align: center;
+    background-color: rgb(255, 226, 96);
+    padding: 5px;
+    border: rgb(0, 0, 0) 5px solid;
+    margin-left: 10px;
+}
+#nolaForm-message{
+    resize: none;
+}
+.find-us{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.find-us a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+    width: 100%;
+    
+}
 
+/*STYLE FOR FOOTER*/
+#footer-list{
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 10px;
+    text-decoration: none;
+}
+#footer-list a {
+    color: darkgray;
+}
+footer{
+    background-color: black;
+    color: darkgray;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.copyright{
+    display: center;
+    text-align: center;
+    font-size: small;
+}
+
+@media (min-width: 600px){
+    #header-small{
+      display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 48%;
+      max-width: 50%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 650px;
+        background-image: url(images/pl-18-g210mub-Af_Klint_Svanen_nr12_1914.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    #header-wide{
+      display: none;
+    }
+    .headerIconSmallDiv img{
+        height: 120px;
+        object-fit: contain;
+    }
+    .front-img{
+      margin-bottom: 0px;
+      height: 420px;
+      width: 100%;
+      background-position: center;
+    }
+    .column{
+        flex:100%;
+        max-width: 100%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 500px;
+        background-image: url(images/pl-18-g210mub-Af_Klint_Svanen_nr12_1914.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .centered{
+        font-size: 15px;
+    }
+}

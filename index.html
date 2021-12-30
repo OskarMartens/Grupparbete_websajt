@@ -7,125 +7,108 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap ikoner -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </head>
-  <body style="background-color: #ffffff;">
-  
+
+<body>
     <div class="header" id="header-wide">
-      <header class="headerClass">
-        <div class="headerIconDiv">
-          <a href="index.html"><img
-            src="images/Nola.png"
-            width="150"
-            height="100"
-            alt="#"
-            
-          /></a>
-        </div>
-        
-        <div class="headerLinksDiv">
-          <a href="#">Portfolio</a>
-          <a href="Kontakt.html">Kontakt</a>
-          <a href="#">Om Oss</a>
-        </div>
-      </header>
-      
+        <header class="headerClass">
+          <div class="headerIconDiv">
+            <img src="images/Nola.png" alt="#" id="logo"/>
+          </div>
+          <div class="headerLinksDiv">
+            <a href="cases.html">CASES</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="aboutus.html">ABOUT US</a>
+          </div>
+        </header>
     </div>
 
     <div class="header" id="header-small">
-      <div class="headerIconSmallDiv">
-        <a href=""><img src="images/Nola.png" width="150" height="100" alt="#" /></a>
-      </div>
+        <div class="headerIconSmallDiv">
+          <img src="images/Nola.png" width="150" height="100" alt="#" id="logo2" />
+        </div>
+        
+        <span class="toggler-span" onclick="openNav()">
+            <div class="toggler">
+                <div class="barTop"></div>
+                <div class="barMiddle"></div>
+                <div class="barBottom"></div>
+          </div>
+        </span>
+    </div>
 
-      
-      <span class="toggler-span" onclick="openNav()">
-      
-        <div class="toggler">
-          
-          <div class="barTop"></div>
-          <div class="barMiddle"></div>
-          <div class="barBottom"></div>
+    <div id="my-nav" class="overlay">
+        <div class="closeBtnDiv">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!-- &times; creates the X icon -->
+        </div>
+  
+        <div class="overlay-content">
+          <a href="cases.html">Cases</a>
+          <a href="contact.html">Contact</a>
+          <a href="omoss.html">About us</a>
         </div>
     </div>
-    <span>
 
-    <div id="myNav" class="overlay">
-      <div class="closeBtnDiv">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-        &times;</a>
-      </div>
-
-      <div class="overlay-content">
-        <a href="#">Portfolio</a>
-        <a href="Kontakt.html">Kontakt</a>
-        <a href="#">Om oss</a>
-      </div>
-    </div>
-    
-
-    <main role="main" class="bd-masthead">
-      <div class="flexbox-container">
+    <div class="flexbox-container">
         
-        <div class="frontimg"></div>
+        <div class="front-img"></div>
         <div class="first-section">
-          <div class="textbox-frontpage"><a href="#">CASES</a></div>
-            <div class="casesimg">
-              <ul>
-                <li class="li1">
-                    <img src="images/Inked20200830_111900_LI.jpg" alt="A Toyota Previa covered in graffiti" loading="lazy" >
-                    <div class="text-block">
-                        <h4></h4></div></li>
-                <li class="li1">
-                    <img src="images/Inked20201011_114115_LI.jpg" alt="Interesting living room light through a window" loading="lazy">
-                </li>
-                <li class="li1">
-                    <img src="images/Inked20210304_153613_LI.jpg" alt="Sara on a red bike" loading="lazy">
-                </li>
-                <li class="li1">
-                    <img src="images/Inked20210511_170124_LI.jpg" alt="XOXO venue in between talks" loading="lazy">
-                </li>
-                <li class="li1">
-                    <img src="images/Inked20210608_213954_LI.jpg" alt="Trees lit by green light during dusk" loading="lazy">
-                </li>
-                <li class="li1">
-                    <img src="images/Inked20210719_205317_LI.jpg" alt="Portrait of Justin Pervorse" loading="lazy">
-                </li>
-                <li class="li1"></li>
-              </ul>
+          <p>At NOLA we belive that the greatest of things will happen when the greatest of people come together.</p>
+          <button class="button-52">CREATE GREAT</button>
+        </div>
+        <div class="textbox-link"><a href="#">Cases</a></div>
+        <div class="cases-container">
+            <div class="row">
+              <div class="column">
+                <img src="images/Inked20200830_111900_LI.jpg" alt="">
+                <img src="images/Inked20201011_114115_LI.jpg" alt="">
+              </div>
+              <div class="column">            
+                <img src="images/Inked20210608_213954_LI.jpg" alt="">
+                <img src="images/Inked20210719_205317_LI.jpg" alt="">
+              </div>
+              <div class="column">
+                <img src="images/Inked20210511_170124_LI.jpg" alt=""> 
+                <img src="images/Inked20210304_153613_LI.jpg" alt="">
+              </div>
             </div>
         </div>
-        <div class="main"><div class="textbox-frontpage">
-          <a href="#" >ABOUT US</a></div>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
-          </p>
-        </div>
-      </div>
-    </main>
+          <hr>
+          <div class="main">
+            <div class="textbox-link">
+            <a href="#" >About us</a></div>
+            <div class="row">
+                <div class="column" id="portfolio1">
+                  <img src="images/1636535598303.jpg" alt="">
+                  <div class="centered" >LINN</div>
+                </div>
+                <div class="column" id="portfolio2">            
+                  <img src="images/FC4BA218-DB0B-45A6-BF54-638C542BD033.jpg" alt="">
+                  <div class="centered" >OSKAR</div>
+                </div>
+                <div class="column" id="portfolio3">
+                  <img src="images/1631089399198.jpg" alt="">
+                  <div class="centered">NASIR</div>
+                </div>
+                <div class="column" id="portfolio4">
+                    <img src="images/Inked20210511_170124_LI.jpg" alt="">
+                    <div class="centered">ANDREAS</div>
+                  </div>
+              </div>
+          </div>
+    </div>
+    <footer>
+        <nav>
+          <ul id="footer-list">
+            <li><a href="">Top</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Operal @ 2021</p>
+        </nav>
+      </footer>
 
-    
-     <footer>
-      <nav>
-        <ul id="footer-list">
-          <li><a href="<!-- Toppen av sidan -->">Top</a></li>
-          <li><a href="<!-- Om oss -->">About</a></li>
-          <li><a href="<!-- En låtsassida -->">Terms</a></li>
-          <li><a href="<!-- En annan låtsassida -->">Privacy Policy</a></li>
-        </ul>
-        <p class="copyright">Operal @ 2021</p>
-      </nav>
-    </footer>
-  </body>
+</body>
 </html>

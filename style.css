@@ -257,6 +257,37 @@ body {
     transform: translate(-50%, -50%);
   }
 
+ /*STYLE FOR CONTACT SITE!*/ 
+.kontaktSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
+#nolaForm-form{
+    text-align: center;
+    background-color: rgb(255, 226, 96);
+    padding: 5px;
+    border: rgb(0, 0, 0) 5px solid;
+    margin-left: 10px;
+}
+#nolaForm-message{
+    resize: none;
+}
+.find-us{
+    display: flex;
+    justify-content: center;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+    width: 100%;
+    
+}
+
+/*STYLE FOR FOOTER*/
 #footer-list{
     display: flex;
     align-self: center;
@@ -264,7 +295,6 @@ body {
     list-style-type: none;
     margin: 10px;
     text-decoration: none;
-  
 }
 #footer-list a {
     color: darkgray;
@@ -286,6 +316,7 @@ footer{
     text-align: center;
     font-size: small;
 }
+
 @media (min-width: 600px){
     #header-small{
       display: none;

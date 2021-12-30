@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+</html> 
+
+<body>
+    <div class="header" id="header-wide">
+        <header class="headerClass">
+          <div class="headerIconDiv">
+            <img src="images/Nola.png" alt="#" id="logo"/>
+          </div>
+          <div class="headerLinksDiv">
+            <a href="cases.html">CASES</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="aboutus.html">ABOUT US</a>
+          </div>
+        </header>
+    </div>
+
+    <div class="header" id="header-small">
+        <div class="headerIconSmallDiv">
+          <img src="images/Nola.png" width="150" height="100" alt="#" id="logo" />
+        </div>
+        
+        <span class="toggler-span" onclick="openNav()">
+            <div class="toggler">
+                <div class="barTop"></div>
+                <div class="barMiddle"></div>
+                <div class="barBottom"></div>
+          </div>
+    </div>
+
+    <div id="my-nav" class="overlay">
+        <div class="closeBtnDiv">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!-- &times; creates the X icon -->
+        </div>
+  
+        <div class="overlay-content">
+          <a href="cases.html">Cases</a>
+          <a href="contact.html">Contact</a>
+          <a href="omoss.html">About us</a>
+        </div>
+    </div>
+
+    <div class="oskar-flexbox-container">
+        <div class="oskar-row">
+            <div class="oskar-column">
+              <img
+                class="profile-picture"
+                src="images/oskar.jpg"
+                alt=""
+              />
+            </div>
+            <div class="oskar-column">
+              <h2 class="name">Oskar</h2>
+              <ul class="list">
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                <li>
+                  Dictumst quisque sagittis purus sit amet volutpat consequat.
+                </li>
+                <li>Vitae justo eget magna fermentum iaculis eu non.</li>
+              </ul>
+              <div class="skills-bar">
+                <div class="bar">
+                  <div class="info">
+                    <span>HTML</span>
+                  </div>
+                  <div class="progress-line html"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>CSS</span>
+                  </div>
+                  <div class="progress-line css"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>Java</span>
+                  </div>
+                  <div class="progress-line java"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>MySQL</span>
+                  </div>
+                  <div class="progress-line mysql"><span></span></div>
+                </div>
+              </div>
+              <p class="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut
+                eaque consequatur illum aperiam laboriosam et mollitia beatae dicta
+                deserunt totam qui, facere nulla tempora distinctio aliquam quo,
+                ipsam nam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate, quod odit iusto tempore libero dolor? Sint quia
+                voluptatibus blanditiis fugiat nam velit. Expedita nisi, ratione
+                labore voluptatum exercitationem excepturi assumenda.
+              </p>
+            </div>
+        </div>
+    
+    </div>
+    <footer>
+        <nav>
+          <ul id="footer-list">
+            <li><a href="#top">Top</a></li>
+            <li><a href="omoss.html">About</a></li>
+            <li><a href="<!-- En låtsassida -->">Terms</a></li>
+            <li><a href="<!-- En annan låtsassida -->">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">NOLA © 2021</p>
+        </nav>
+      </footer>
+
+</body>

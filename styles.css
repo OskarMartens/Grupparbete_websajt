@@ -78,9 +78,7 @@
     text-shadow: 0 0 30px #ff80ed;
     color: white;
   }
-  .flexbox-container{
-    
-  }
+  
   .casesimg{
     display: flex;
     justify-content: center;
@@ -122,6 +120,8 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
   }
+  
+  
   ul {
     max-width: 95%;
     display: flex;
@@ -162,17 +162,42 @@ li:last-child {
     padding: 10px;
     border-right: 1px solid darkgray;
     box-sizing: border-box;
-  } */
+  } 
  
+  
+  .kontaktSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    background-image: url(images/americana-g10748c709_1280.png);
+    background-size: cover;
+    padding: 100px;
+    
 
+  }
+  
 
   #nolaForm-form{
-    background: url(images/americana-g10748c709_1280.png) no-repeat;
+    background-color: bisque;
+    padding: 5px;
+    border: purple 1px solid;
+    margin-left: 10px;
   }
 
-  textarea{
+  #nolaForm-message{
     resize: none;
   }
+  .contactInfo{
+    background-color: black;
+    color: white;
+    font-family: cursive;
+    padding: 5px;
+  
+  }
+
+
   
   @media (max-width: 600px) {
     #main,

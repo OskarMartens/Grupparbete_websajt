@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+</html> 
+
+<body>
+    <div class="header" id="header-wide">
+        <header class="headerClass">
+          <div class="headerIconDiv">
+            <img src="images/Nola.png" alt="#" id="logo"/>
+          </div>
+          <div class="headerLinksDiv">
+            <a href="cases.html">CASES</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="aboutus.html">ABOUT US</a>
+          </div>
+        </header>
+    </div>
+
+    <div class="header" id="header-small">
+        <div class="headerIconSmallDiv">
+          <img src="images/Nola.png" width="150" height="100" alt="#" id="logo" />
+        </div>
+        
+        <span class="toggler-span" onclick="openNav()">
+            <div class="toggler">
+                <div class="barTop"></div>
+                <div class="barMiddle"></div>
+                <div class="barBottom"></div>
+          </div>
+    </div>
+
+    <div id="my-nav" class="overlay">
+        <div class="closeBtnDiv">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!-- &times; creates the X icon -->
+        </div>
+  
+        <div class="overlay-content">
+          <a href="cases.html">Cases</a>
+          <a href="contact.html">Contact</a>
+          <a href="omoss.html">About us</a>
+        </div>
+    </div>
+
+    <div class="flexbox-container">
+        
+        <div class="front-img"></div>
+        <div class="kontaktSection">
+        
+
+            <div id="nolaForm-form">
+              <header class="formHeader">
+                <h2><strong>Leave us a message!</strong></h2>
+              </header>
+              <form action="tack.html" method="post">
+                <fieldset>
+              <input type="text" placeholder="First name"><br><br>
+              <label for=""></label>
+              <input type="text" placeholder="Last name"><br><br>
+              <label for="Email"> Email </label>
+              <input pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+              id="Email" type="text" required><br><br>
+              <input type="tel" placeholder="Telefonnummer"><br><br>
+              <label for="intressen"><strong>Preferred reply method?</strong></label><br>
+              <input type="checkbox" name="Kontakt-alt1" value="E-mail">
+              <label for="Kontakt-alt1">E-mail</label><br>
+              <input type="checkbox" name="Kontakt-alt2" value="Telefon">
+              <label for="Kontakt-alt2">Phone</label><br><br>
+              <textarea name="Meddelande" id="nolaForm-Message" placeholder="Meddelande" cols="30" rows="10">
+              </textarea><br>
+              <input type="submit" value="Submit" >
+            </fieldset> 
+            </form>
+            </div>
+            
+          
+           <div class="find-us"><a href="#" >Find us!</a></div>
+         
+          <div class="map">
+                <div class="mapouter">
+                    
+                    <div class="gmap_canvas">
+                        <iframe width="541" height="514" id="gmap_canvas" src="https://maps.google.com/maps?q=Liljeholmstorget%207&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:514px;width:541px;}</style>
+                        <a href="https://www.embedgooglemap.net">using google maps on your website</a>
+                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:514px;width:541px;}</style>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+          <ul id="footer-list">
+            <li><a href="<!-- Toppen av sidan -->">Top</a></li>
+            <li><a href="<!-- Om oss -->">About</a></li>
+            <li><a href="<!-- En låtsassida -->">Terms</a></li>
+            <li><a href="<!-- En annan låtsassida -->">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Operal @ 2021</p>
+        </nav>
+      </footer>
+
+</body>

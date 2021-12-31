@@ -407,14 +407,12 @@ body {
     padding: 150px;
     display: flex;
     margin: 20px;
-    font: arial;
 
 }
 
 .oskar-row{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
     flex-wrap: wrap;
     width: 100%;
 }
@@ -461,7 +459,6 @@ li:hover{
     padding-top: 70px;
     display: flex;
     margin: 20px;
-    font: arial;
 }
 
 .linn-row{

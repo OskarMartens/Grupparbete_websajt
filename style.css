@@ -826,6 +826,23 @@ footer{
     .oskar-column{
         flex: 100%;
     }
+    .linn-flexbox-container{
+        padding-top: 150px;
+        padding-bottom: 200px;
+        padding-left: 0px;
+    }
+    .linn-row{
+        padding:0;
+    }
+    .linn-column{
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .linn-column2{
+        flex: 100%;
+        max-width: 100%;
+    }
     #nasir_pp.profile-picture{
         border-radius: 70%;
     height: 500px;

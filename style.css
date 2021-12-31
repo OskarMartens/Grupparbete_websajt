@@ -69,6 +69,78 @@ body {
     height: 80px;
     object-fit: contain;
 }
+/*DROP DOWN MENU*/
+.dropdown-button{
+
+    cursor: pointer;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: 0;
+
+    padding-left: 20px;
+
+    background: none;
+
+    color: white;
+
+    font-size: 20px;
+
+}
+
+.aboutus-drop{
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+.dropdown-content{
+
+    display: none;
+
+    position: absolute;
+
+    /* min-width: none; */
+
+    z-index: 1;
+
+}
+
+.dropdown-content a{
+
+    padding: 12px 16px;
+
+    text-decoration: none;
+
+    display: block;
+
+}
+
+.dropdown-content a:hover{
+
+    background-color: #f1f1f1;
+
+    color: black;
+
+}
+
+.aboutus-drop:hover .dropdown-content{
+
+    display: block;
+
+}
+
+.aboutus-drop:hover .dropdown-content{
+
+    background-color: black;
+
+    opacity: 80%;
+
+    margin: 0;
+
+}
 /*HAMBURGER MENU STYLE*/
 .toggler{
     margin-right: 2%;
@@ -126,8 +198,8 @@ body {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+    font-size: 20px;
+    color:#ffffff;
     display: block;
     transition: 0.3s;
 }
@@ -540,6 +612,16 @@ li:hover{
     transform-origin: left;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
+#l_bar.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: rgb(4, 78, 14);
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
 
 @keyframes animate{
     100%{
@@ -547,7 +629,12 @@ li:hover{
 
     }
 }
-
+#l_c.progress-line.c span{
+    width: 50%;
+}
+#l_arduino.progress-line.arduino span{
+    width: 80%;
+}
 #o_html.progress-line.html span{
     width: 80%;
 }
@@ -565,6 +652,9 @@ li:hover{
 }
 #n_java.progress-line.java span{
     width: 80%;
+}
+#l_java.progress-line.java span{
+    width: 95%;
 }
 #o_mysql.progress-line.mysql span{
     width: 95%;
@@ -598,7 +688,12 @@ li:hover{
     padding: 1px 8px;
     border-radius: 3px;
 }
-
+#l_c.progress-line.c span::after{
+    content:"50%";
+}
+#l_arduino.progress-line.arduino span::after{
+    content: "80%";
+}
 #o_css.progress-line.html span::after{
     content: "80%";
 }
@@ -611,6 +706,9 @@ li:hover{
 #n_css.progress-line.css span::after{
     content: "45%";
 }
+#l_java.progress-line.java span::after{
+    content: "95%";
+}
 #o_java.progress-line.java span::after{
     content: "80%";
 }
@@ -618,7 +716,7 @@ li:hover{
     content: "80%";
 }
 #o_mysql.progress-line.mysql span::after{
-    content: "100%";
+    content: "95%";
 }
 #n_mysql.progress-line.mysql span::after{
     content: "100%";

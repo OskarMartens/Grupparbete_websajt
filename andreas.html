@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+</html> 
+
+<body>
+    <div class="header" id="header-wide">
+        <header class="headerClass">
+            <a href="index.html"><div class="headerIconDiv">
+            <img src="images/Nola.png" alt="#" id="logo"/>
+          </div></a>
+          <div class="headerLinksDiv">
+            <a href="cases.html">CASES</a>
+            <a href="contact.html">CONTACT</a>
+            <div class="aboutus-drop">
+
+                <button class="dropdown-button">ABOUT US</button>
+    
+                <div class="dropdown-content">
+    
+                  <a href="linn.html">Linn</a>
+    
+                  <a href="andreas.html">Andreas</a>
+    
+                  <a href="NASIR.html">Nasir</a>
+    
+                  <a href="oskar.html">Oskar</a>
+    
+                </div>
+          </div>
+          </div>
+        </header>
+    </div>
+
+    <div class="header" id="header-small">
+        <div class="headerIconSmallDiv">
+          <img src="images/Nola.png" width="150" height="100" alt="#" id="logo" />
+        </div>
+        
+        <span class="toggler-span" onclick="openNav()">
+            <div class="toggler">
+                <div class="barTop"></div>
+                <div class="barMiddle"></div>
+                <div class="barBottom"></div>
+          </div>
+    </div>
+
+    <div id="my-nav" class="overlay">
+        <div class="closeBtnDiv">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!-- &times; creates the X icon -->
+        </div>
+  
+        <div class="overlay-content">
+          <a href="cases.html">Cases</a>
+          <a href="contact.html">Contact</a>
+          <div class="aboutus-drop">
+
+            <button class="dropdown-button">About us</button>
+
+            <div class="dropdown-content">
+
+              <a href="linn.html">Linn</a>
+
+              <a href="andreas.html">Andreas</a>
+
+              <a href="NASIR.html">Nasir</a>
+
+              <a href="oskar.html">Oskar</a>
+
+            </div>
+      </div>
+        </div>
+    </div>
+
+    <div class="flexbox-container">
+        <div class="andreasFlex" style="margin-top: 150px;">
+            
+            <div style="display: flex; justify-content: center;">
+                <div class="picture" style="display: flex; align-items: center; justify-content: center; background-color: darkgrey; width: 200px; height: 250px; ">  
+                    <img src="images/logo.png" width="150" height="200" alt="#" id="logo"/></div>
+                <div class="textBox1" style="background-color: lightgrey; margin-left: 16px; margin-bottom: 16px; padding: 20px;  box-shadow: 10px 10px 15px black; border-radius: 10px;">
+                    <h2>Andreas Sjödén</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                           Accusantium deserunt ut aperiam obcaecati quidem rem,<br>
+                           culpa totam numquam et labore deleniti provident,<br>
+                           sequi, similique blanditiis maxime.<br>
+                           Obcaecati facilis minima quibusdam?
+                        </p><br>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                            Accusantium deserunt ut aperiam obcaecati quidem rem,<br>
+                            culpa totam numquam et labore deleniti provident,<br>
+                            sequi, similique blanditiis maxime.<br>
+                            Obcaecati facilis minima quibusdam?
+                         </p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                
+                <div class="textBox2" style="background-color: lightgrey; margin-bottom: 16px; margin-left: 16px; padding: 20px;  box-shadow: -10px 10px 15px black; border-radius: 10px;">
+                    <h2>Experience</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                           Accusantium deserunt ut aperiam obcaecati quidem rem,<br>
+                           culpa totam numquam et labore deleniti provident,<br>
+                           sequi, similique blanditiis maxime.<br>
+                           Obcaecati facilis minima quibusdam?
+                        </p><br>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                            Accusantium deserunt ut aperiam obcaecati quidem rem,<br>
+                            culpa totam numquam et labore deleniti provident,<br>
+                            sequi, similique blanditiis maxime.<br>
+                            Obcaecati facilis minima quibusdam?
+                         </p>
+                         Accusantium deserunt ut aperiam obcaecati quidem rem,<br>
+                         culpa totam numquam et labore deleniti provident,<br>
+                         sequi, similique blanditiis maxime.<br>
+                         Obcaecati facilis minima quibusdam?
+                      </p>
+                      Accusantium deserunt ut aperiam obcaecati quidem rem,<br>
+                      culpa totam numquam et labore deleniti provident,<br>
+                      sequi, similique blanditiis maxime.<br>
+                      Obcaecati facilis minima quibusdam?</p>
+                </div>
+            </div>
+            <div class="skillsHeader" style="display: flex; flex-direction: column; align-items: center; margin-top: 16px; margin-bottom: 8px;">
+              <h2 style="font-weight: bold;">SKILLS</h2>
+              <div class="line" style="height: 5px; width: 100%; background-color: black;"></div>
+            </div>
+            <!-- div som innehåller alla diagrammen-->
+            <div style="display: flex; justify-content: center;">
+                <!-- divar för varje enskilt diagram med rubrik och procent -->
+                <div class="diagramSkillContainer" style="margin: 16px; display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 10px 10px 15px black; border-radius: 10px;">
+                  <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">JAVA</h2>
+                  <div class="diagram1" style="height: 100px; box-shadow: 0px 0px 10px; width: 100px; border-radius: 50%; background: conic-gradient(lightgrey 0.00% 15.00%, rgba(192, 7, 7, 0.87) 0.00% 85%)"></div>
+                  <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">85%</h2>
+                </div>
+                <div class="diagramSkillContainer" style="margin: 16px;display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 10px 10px 15px black; border-radius: 10px;">
+                  <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">SQL</h2>
+                  <div class="diagram2" style="height: 100px; box-shadow: 0px 0px 10px; width: 100px; border-radius: 50%; background: conic-gradient(lightgrey 0.00% 55.00%, rgba(192, 7, 7, 0.87) 0.00% 45%)"></div>
+                  <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">45%</h2>
+                </div>
+                <div class="diagramSkillContainer" style="margin: 16px; display: flex; align-items: center; flex-direction: column; width: 150px; background-color: white; box-shadow: 10px 10px 15px black; border-radius: 10px;">
+                  <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">HTML/CSS</h2>
+                  <div class="diagram3" style="height: 100px; box-shadow: 0px 0px 10px; width: 100px; border-radius: 50%; background: conic-gradient(lightgrey 0.00% 68.00%, rgba(192, 7, 7, 0.87) 0.00% 32%)"></div>
+                  <h2 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">32%</h2>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <div style ="display: flex; justify-content: center;">
+                <!-- div som innehåller progressbar och text ovanför-->
+              <div class ="skillBar1" style="display:flex;flex-direction: column; width: fit-content; margin-right: 16px; margin-bottom: 16px;">
+                <!-- div för text ovanför progressbar -->
+                <div class="languageProgressText" style="display: flex; justify-content: space-between;">
+                  <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">Python</h5>
+                  <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">25%</h5>
+                </div>
+                <!-- div för själva progressbaren-->
+                <div class="progressBarBorder" style="width: 150px; height: 20px; border-style: solid; border-radius: 20px;">
+                  <div class="phytonBar" style="height: 100%; width: 25%; background-color:rgba(192, 7, 7, 0.87); border-radius: 20px;"></div>
+                </div>
+              </div>
+              <!-- div som innehåller progressbar och text ovanför-->
+            <div class ="skillBarTitle2" style="display:flex;flex-direction: column; width: fit-content;">
+              <!-- div för text ovanför progressbar -->
+              <div class="languageProgressText" style="display: flex; justify-content: space-between;">
+                <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">C#</h5>
+                <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">46%</h5>
+              </div>
+              <!-- div för själva progressbaren-->
+              <div class="progressBarBorder" style="width: 150px; height: 20px; border-style: solid; border-radius: 20px;">
+                <div class="c#Bar" style="height: 100%; width: 46%; background-color:rgba(192, 7, 7, 0.87); border-radius: 20px;"></div>
+              </div>
+            </div>
+            
+              </div>
+              <div style ="display: flex; justify-content: center;">
+                
+                <div class ="skillBarTitle1" style="display:flex;flex-direction: column; width: fit-content; margin-right: 16px;">
+    
+                  <div class="languageProgressText" style="display: flex; justify-content: space-between;">
+    
+                    <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">Vacation</h5>
+                    <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">95%</h5>
+    
+                  </div>
+    
+                  <div class="progressBarBorder" style="width: 150px; height: 20px; border-style: solid; border-radius: 20px;">
+                    <div class="vacationBar" style="height: 100%; width: 95%; background-color:rgba(192, 7, 7, 0.87); border-radius: 20px;"></div>
+                  </div>
+    
+                </div>
+    
+                <div class ="skillBarTitle2" style="display:flex;flex-direction: column; width: fit-content;">
+    
+                  <div class="languageProgressText" style="display: flex; justify-content: space-between;">
+    
+                    <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">Coffee</h5>
+                    <h5 style="font-weight: bold; font-family: 'Courier New', Courier, monospace;">79%</h5>
+    
+                  </div>
+                  
+                  <div class="progressBarBorder" style="width: 150px; height: 20px; border-style: solid; border-radius: 20px;">
+                    <div class="coffeeBar" style="height: 100%; width: 79%; background-color:rgba(192, 7, 7, 0.87); border-radius: 20px;"></div>
+                  </div>
+    
+                </div>
+    
+                
+    
+                  </div>
+            </div>
+        </div>
+    <div class="portfolio-margin"></div>
+    </div>
+    <footer>
+        <nav>
+          <ul id="footer-list">
+            <li><a href="#top">Top</a></li>
+            <li><a href="omoss.html">About</a></li>
+            <li><a href="<!-- En låtsassida -->">Terms</a></li>
+            <li><a href="<!-- En annan låtsassida -->">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">NOLA © 2021</p>
+        </nav>
+      </footer>
+
+</body>

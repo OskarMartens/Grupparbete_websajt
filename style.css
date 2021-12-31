@@ -647,29 +647,29 @@ li:hover{
 #l_arduino.progress-line.arduino span{
     width: 80%;
 }
+#l_java.progress-line.java span{
+    width: 95%;
+}
 #o_html.progress-line.html span{
+    width: 80%;
+}
+#o_mysql.progress-line.mysql span{
+    width: 95%;
+}
+#o_css.progress-line.css span{
+    width: 65%;
+}
+#o_java.progress-line.java span{
     width: 80%;
 }
 #n_html.progress-line.html span{
     width: 50%;
 }
-#o_css.progress-line.css span{
-    width: 65%;
-}
 #n_css.progress-line.css span{
     width: 45%;
 }
-#o_java.progress-line.java span{
-    width: 95%;
-}
 #n_java.progress-line.java span{
     width: 80%;
-}
-#l_java.progress-line.java span{
-    width: 95%;
-}
-#o_mysql.progress-line.mysql span{
-    width: 95%;
 }
 #n_mysql.progress-line.mysql span{
     width: 100%;
@@ -706,29 +706,29 @@ li:hover{
 #l_arduino.progress-line.arduino span::after{
     content: "80%";
 }
-#o_css.progress-line.html span::after{
-    content: "80%";
+#l_java.progress-line.java span::after{
+    content: "95%";
 }
-#n_html.progress-line.html span::after{
-    content: "50%";
+#o_html.progress-line.html span::after{
+    content: "80%";
 }
 #o_css.progress-line.css span::after{
     content: "65%";
 }
-#n_css.progress-line.css span::after{
-    content: "45%";
-}
-#l_java.progress-line.java span::after{
-    content: "95%";
-}
 #o_java.progress-line.java span::after{
-    content: "80%";
-}
-#n_java.progress-line.java span::after{
     content: "80%";
 }
 #o_mysql.progress-line.mysql span::after{
     content: "95%";
+}
+#n_html.progress-line.html span::after{
+    content: "50%";
+}
+#n_css.progress-line.css span::after{
+    content: "45%";
+}
+#n_java.progress-line.java span::after{
+    content: "80%";
 }
 #n_mysql.progress-line.mysql span::after{
     content: "100%";

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact - NOLA</title>
     
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -26,15 +26,18 @@
 
     <div class="header" id="header-small">
         <div class="headerIconSmallDiv">
-          <img src="images/Nola.png" width="150" height="100" alt="#" id="logo" />
+          <a href="index.html"><img src="images/Nola.png" width="150" height="100" alt="#" id="logo2"/></a>
         </div>
         
-        <span class="toggler-span" onclick="openNav()">
+        <div class="toggler-span" onclick="openNav()">
             <div class="toggler">
+              
                 <div class="barTop"></div>
                 <div class="barMiddle"></div>
                 <div class="barBottom"></div>
+              
           </div>
+        </div>
     </div>
 
     <div id="my-nav" class="overlay">
@@ -59,25 +62,25 @@
               <header class="formHeader">
                 <h2><strong>Leave us a message!</strong></h2>
               </header>
-              <form action="tack.html" method="post">
-                <fieldset>
-              <input type="text" placeholder="First name"><br><br>
-              <label for=""></label>
-              <input type="text" placeholder="Last name"><br><br>
-              <label for="Email"> Email </label>
-              <input pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-              id="Email" type="text" required><br><br>
-              <input type="tel" placeholder="Telefonnummer"><br><br>
-              <label for="intressen"><strong>Preferred reply method?</strong></label><br>
-              <input type="checkbox" name="Kontakt-alt1" value="E-mail">
+              <form target="_blank">
+            
+              <input type="text" name="fname" placeholder="First name"><br><br>
+              <input type="text" name="lname" placeholder="Last name"><br><br>
+              <input type="text" name="mail" placeholder="E-mail" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required><br><br>
+              <input type="tel"  name="phone" placeholder="Telefonnummer"><br><br>
+              <h4><strong>Preferred reply method?</strong></h4>
+              <input type="checkbox" id="Kontakt-alt1" value="E-mail">
               <label for="Kontakt-alt1">E-mail</label><br>
-              <input type="checkbox" name="Kontakt-alt2" value="Telefon">
+              <input type="checkbox" id="Kontakt-alt2" value="Telefon">
               <label for="Kontakt-alt2">Phone</label><br><br>
-              <textarea name="Meddelande" id="nolaForm-Message" placeholder="Meddelande" cols="30" rows="10">
+              <textarea name="Message" id="nolaForm-Message" placeholder="Meddelande" cols="30" rows="10">
               </textarea><br>
               <input type="submit" value="Submit" >
-            </fieldset> 
-            </form>
+            </div>
+            
+             
+              
+          </form>
             </div>
             
           
@@ -85,13 +88,11 @@
          
           <div class="map">
                 <div class="mapouter">
-                    
-                    <div class="gmap_canvas">
-                        <iframe width="541" height="514" id="gmap_canvas" src="https://maps.google.com/maps?q=Liljeholmstorget%207&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        <a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:514px;width:541px;}</style>
-                        <a href="https://www.embedgooglemap.net">using google maps on your website</a>
-                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:514px;width:541px;}</style>
-                    </div>
+                 <div class="gmap_canvas">
+                        <iframe width="541" height="514" id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=Liljeholmstorget%207&t=&z=13&ie=UTF8&iwloc=&output=embed" >
+                        </iframe>
+                  </div>
                 </div>
           </div>
         </div>
@@ -99,12 +100,12 @@
     <footer>
         <nav>
           <ul id="footer-list">
-            <li><a href="<!-- Toppen av sidan -->">Top</a></li>
-            <li><a href="<!-- Om oss -->">About</a></li>
-            <li><a href="<!-- En låtsassida -->">Terms</a></li>
-            <li><a href="<!-- En annan låtsassida -->">Privacy Policy</a></li>
+            <li><a href="#top">Top</a></li>
+            <li><a href="omoss.html">About</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy Policy</a></li>
           </ul>
-          <p class="copyright">Operal @ 2021</p>
+          <p class="copyright">NOLA @ 2021</p>
         </nav>
       </footer>
 

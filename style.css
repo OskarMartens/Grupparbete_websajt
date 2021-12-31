@@ -167,7 +167,6 @@ body {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
 }
 .button-52:after {
@@ -287,6 +286,7 @@ body {
 #nolaForm-message{
     resize: none;
 }
+
 .find-us{
     display: flex;
     justify-content: center;
@@ -518,7 +518,241 @@ li:hover{
     content: "50%";
 }
 
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:514px;
+    width:541px;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:514px;
+    width:541px;
+}
+/*STYLE FOR OSKARS PAGE*/
 
+.oskar-flexbox-container{
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-style: inherit;
+    display: flex;
+    flex-direction: row;
+}
+#n_flex.oskar-flexbox-container{
+    background: url(images/nasir_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.oskar-row{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+
+
+.oskar-column{
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+#n_info{
+    margin-top: 10px;
+    padding-left: 15px
+}
+#n_info:hover{
+    background-color: black
+}
+#n_info p:hover{
+    color: deeppink;
+}
+#nasir_list.list:hover{
+    background-color: black;
+    
+}
+.li{
+    transition: color 1s;
+}
+
+li:hover{
+    color: deeppink;
+}
+
+.profile-picture{
+    border-radius: 90%;
+    }
+
+#nasir_pp.profile-picture{
+    border-radius: 30%;
+    height: 650px;
+    width: 600px;
+    border-style:ridge;
+    border-color: burlywood;
+    
+    
+    
+}
+
+
+@media screen and (max-width: 600px){
+    .flexbox-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .oskar-column{
+        flex: 100%;
+    }
+    #nasir_pp.profile-picture{
+        border-radius: 70%;
+    height: 500px;
+    width: 500px;
+
+    }
+}
+
+.skills-bar{
+    width: 387px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+}
+
+.skills-bar .bar{
+    margin: 20px 0;
+}
+
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0 , 0.05);
+    
+}
+
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: pink;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+
+    }
+}
+
+#o_html.progress-line.html span{
+    width: 80%;
+}
+#n_html.progress-line.html span{
+    width: 50%;
+}
+#o_css.progress-line.css span{
+    width: 65%;
+}
+#n_css.progress-line.css span{
+    width: 45%;
+}
+#o_java.progress-line.java span{
+    width: 95%;
+}
+#n_java.progress-line.java span{
+    width: 80%;
+}
+#o_mysql.progress-line.mysql span{
+    width: 95%;
+}
+#n_mysql.progress-line.mysql span{
+    width: 100%;
+}
+
+
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+
+}
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -24px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+#o_css.progress-line.html span::after{
+    content: "80%";
+}
+#n_html.progress-line.html span::after{
+    content: "50%";
+}
+#o_css.progress-line.css span::after{
+    content: "65%";
+}
+#n_css.progress-line.css span::after{
+    content: "45%";
+}
+#o_java.progress-line.java span::after{
+    content: "80%";
+}
+#n_java.progress-line.java span::after{
+    content: "80%";
+}
+#o_mysql.progress-line.mysql span::after{
+    content: "100%";
+}
+#n_mysql.progress-line.mysql span::after{
+    content: "100%";
+
+}
 /*STYLE FOR FOOTER*/
 #footer-list{
     display: flex;
@@ -544,8 +778,8 @@ footer{
     overflow: hidden;
 }
 .copyright{
-    display: center;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: small;
 }
 
@@ -615,3 +849,4 @@ footer{
         flex: 100%;
     }
 }
+

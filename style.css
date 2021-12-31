@@ -388,6 +388,18 @@ body {
     height:514px;
     width:541px;
 }
+/*STYLE FOR PORTFOLIO PAGE*/
+.header-text{
+    margin-top: 200px;
+    margin-left: 30px;
+
+}
+.portfolio-text{
+    margin-left:30px;
+}
+.portfolio-margin{
+    height: 200px ;
+}
 
 /*STYLE FOR OSKARS PAGE*/
 

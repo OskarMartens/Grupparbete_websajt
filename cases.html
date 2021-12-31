@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+<body>
+    <div class="header" id="header-wide">
+        <header class="headerClass">
+            <a href="index.html"><div class="headerIconDiv">
+            <img src="images/Nola.png" alt="#" id="logo"/>
+          </div></a>
+          <div class="headerLinksDiv">
+            <a href="cases.html">CASES</a>
+            <a href="contact.html">CONTACT</a>
+            <div class="aboutus-drop">
+
+                <button class="dropdown-button">ABOUT US</button>
+    
+                <div class="dropdown-content">
+    
+                  <a href="linn.html">Linn</a>
+    
+                  <a href="andreas.html">Andreas</a>
+    
+                  <a href="NASIR.html">Nasir</a>
+    
+                  <a href="oskar.html">Oskar</a>
+    
+                </div>
+          </div>
+          </div>
+        </header>
+    </div>
+
+    <div class="header" id="header-small">
+        <div class="headerIconSmallDiv">
+          <img src="images/Nola.png" width="150" height="100" alt="#" id="logo" />
+        </div>
+        
+        <span class="toggler-span" onclick="openNav()">
+            <div class="toggler">
+                <div class="barTop"></div>
+                <div class="barMiddle"></div>
+                <div class="barBottom"></div>
+          </div>
+    </div>
+
+    <div id="my-nav" class="overlay">
+        <div class="closeBtnDiv">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!-- &times; creates the X icon -->
+        </div>
+  
+        <div class="overlay-content">
+          <a href="cases.html">Cases</a>
+          <a href="contact.html">Contact</a>
+          <div class="aboutus-drop">
+
+            <button class="dropdown-button">About us</button>
+
+            <div class="dropdown-content">
+
+              <a href="linn.html">Linn</a>
+
+              <a href="andreas.html">Andreas</a>
+
+              <a href="NASIR.html">Nasir</a>
+
+              <a href="oskar.html">Oskar</a>
+
+            </div>
+      </div>
+        </div>
+    </div>
+
+    <div class="flexbox-container" id="portfolio-page">
+        <div class="header-text"><h1>Cases</h1></div>
+        <hr>
+        <div class="portfolio-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut
+            eaque consequatur illum aperiam laboriosam et mollitia beatae dicta
+            deserunt totam qui, facere nulla tempora distinctio aliquam quo,
+            ipsam nam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate, quod odit iusto tempore libero dolor? Sint quia
+            voluptatibus blanditiis fugiat nam velit. Expedita nisi, ratione
+            labore voluptatum exercitationem excepturi assumenda.</p></div>
+        <div class="cases-container" style="width: 50%;">
+            <div class="row">
+              <div class="column">
+                <img src="images/Inked20200830_111900_LI.jpg" alt="">
+                <img src="images/Inked20201011_114115_LI.jpg" alt="">
+              </div>
+              <div class="column">            
+                <img src="images/Inked20210608_213954_LI.jpg" alt="">
+                <img src="images/Inked20210719_205317_LI.jpg" alt="">
+              </div>
+              <div class="column">
+                <img src="images/Inked20210511_170124_LI.jpg" alt=""> 
+                <img src="images/Inked20210304_153613_LI.jpg" alt="">
+              </div>
+            </div>
+        </div> 
+        <div class="portfolio-margin"></div>
+    </div>
+    <footer>
+        <nav>
+          <ul id="footer-list">
+            <li><a href="#top">Top</a></li>
+            <li><a href="omoss.html">About</a></li>
+            <li><a href="<!-- En låtsassida -->">Terms</a></li>
+            <li><a href="<!-- En annan låtsassida -->">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">NOLA © 2021</p>
+        </nav>
+      </footer>
+
+</body>
+</html>

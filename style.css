@@ -304,6 +304,19 @@ body {
     width: 100%;
     
 }
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:514px;
+    width:541px;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:514px;
+    width:541px;
+}
+
 /*STYLE FOR OSKARS PAGE*/
 
 .oskar-flexbox-container{
@@ -368,14 +381,12 @@ li:hover{
     display: flex;
     margin: 20px;
     font: arial;
-    outline: solid 1px salmon;
 }
 
 .linn-row{
     flex-direction: row;
     padding: 100px;
     flex-wrap: wrap;
-    outline: solid 1px salmon;
 }
 
 
@@ -383,13 +394,11 @@ li:hover{
     flex-direction: row;
     display: flex;
     flex: 20%;
-    outline: solid 1px salmon;
 }
 .linn-column2{
     flex-direction: column;
     display: flex;
     flex: 20%;
-    outline: solid 1px salmon;
 }
 .name{
     display: flex;
@@ -407,130 +416,10 @@ li:hover{
     border-radius: 90%;
     width: 300px;
     object-fit: contain;
-    outline: solid 1px salmon;
 
 }
 
-
-.skills-bar{
-    width: 387px;
-    background: #fff;
-    border-radius: 10px;
-    padding: 25px 30px;
-}
-
-.skills-bar .bar{
-    margin: 20px 0;
-}
-
-.skills-bar .bar:first-child{
-    margin-top: 0px;
-}
-
-.skills-bar .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-}
-
-
-.skills-bar .bar .progress-line{
-    position: relative;
-    height: 10px;
-    width: 100%;
-    background: #f0f0f0;
-    border-radius: 10px;
-    
-    box-shadow: inset 0px 1px 1px rgba(0, 0, 0 , 0.05);
-    
-}
-
-.bar .progress-line span{
-    height: 100%;
-    width: 80%;
-    background: pink;
-    position: absolute;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-}
-
-@keyframes animate{
-    100%{
-        transform: scaleX(1);
-
-    }
-}
-
-.progress-line.html span{
-    width: 80%;
-}
-.progress-line.css span{
-    width: 65%;
-}
-.progress-line.java span{
-    width: 95%;
-}
-.progress-line.mysql span{
-    width: 90%;
-}
-.progress-line.c span{
-    width: 50%;
-}
-.bar .progress-line span::before{
-    position: absolute;
-    content: "";
-    right: 0;
-    top: -10px;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-
-}
-.bar .progress-line span::after{
-    position: absolute;
-    right: 0;
-    top: -24px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    background: #000;
-    padding: 1px 8px;
-    border-radius: 3px;
-}
-
-.progress-line.html span::after{
-    content: "80%";
-}
-.progress-line.css span::after{
-    content: "65%";
-}
-.progress-line.java span::after{
-    content: "95%";
-}
-.progress-line.mysql span::after{
-    content: "90%";
-}
-.progress-line.c span::after{
-    content: "50%";
-}
-
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:514px;
-    width:541px;
-}
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:514px;
-    width:541px;
-}
-/*STYLE FOR OSKARS PAGE*/
+/*STYLE FOR NASIR PAGE*/
 
 .oskar-flexbox-container{
     padding: 150px;
@@ -608,25 +497,7 @@ li:hover{
     
     
 }
-
-
-@media screen and (max-width: 600px){
-    .flexbox-container{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    .oskar-column{
-        flex: 100%;
-    }
-    #nasir_pp.profile-picture{
-        border-radius: 70%;
-    height: 500px;
-    width: 500px;
-
-    }
-}
-
+/*SKILLS BAR STYLE*/
 .skills-bar{
     width: 387px;
     background: #fff;
@@ -847,6 +718,12 @@ footer{
     }
     .oskar-column{
         flex: 100%;
+    }
+    #nasir_pp.profile-picture{
+        border-radius: 70%;
+    height: 500px;
+    width: 500px;
+
     }
 }
 

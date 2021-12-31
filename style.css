@@ -501,42 +501,32 @@ li:hover{
 }
 
 /*STYLE FOR NASIR PAGE*/
-
-.oskar-flexbox-container{
+.n-flexbox-container{
     padding: 150px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 20px;
-    font-style: inherit;
-    display: flex;
-    flex-direction: row;
-}
-#n_flex.oskar-flexbox-container{
     background: url(images/nasir_bg.jpg) no-repeat center;
     background-size: cover;
 }
-
-.oskar-row{
+.n-row{
     display: flex;
     flex-direction: row;
     padding: 100px;
     flex-wrap: wrap;
 }
-
-
-.oskar-column{
+.n-column{
     display: flex;
     flex-direction: column;
     flex: 40%;
 }
-
 .name{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .info{
     padding-left: 15px;
     display: flex;
@@ -552,31 +542,21 @@ li:hover{
 #n_info p:hover{
     color: deeppink;
 }
-#nasir_list.list:hover{
+.nasir_list:hover{
     background-color: black;
-    
 }
 .li{
     transition: color 1s;
 }
-
 li:hover{
     color: deeppink;
 }
-
-.profile-picture{
-    border-radius: 90%;
-    }
-
-#nasir_pp.profile-picture{
+.n-profile-picture{
     border-radius: 30%;
     height: 650px;
     width: 600px;
     border-style:ridge;
-    border-color: burlywood;
-    
-    
-    
+    border-color: burlywood;  
 }
 /*SKILLS BAR STYLE*/
 .skills-bar{

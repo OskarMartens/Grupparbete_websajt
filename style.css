@@ -309,28 +309,31 @@ body {
 .oskar-flexbox-container{
     padding: 150px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px;
     font: arial;
-    display: flex;
-    flex-direction: row;
+
 }
 
 .oskar-row{
     display: flex;
     flex-direction: row;
-    padding: 100px;
+    
     flex-wrap: wrap;
+    outline: solid 1px saddlebrown;
+    width: 100%;
 }
 
 
 .oskar-column{
+    outline: solid 1px saddlebrown;
+    display: flex;
+}
+.oskar-column2{
     display: flex;
     flex-direction: column;
-    flex: 40%;
+    flex: 50%;
+    outline: solid 1px saddlebrown;
 }
-
 .name{
     display: flex;
     align-items: center;
@@ -353,20 +356,61 @@ li:hover{
 
 .profile-picture{
     border-radius: 90%;
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+/*STYLE FOR LINNS PAGE*/
 
+.linn-flexbox-container{
+    padding: 150px;
+    padding-top: 70px;
+    display: flex;
+    margin: 20px;
+    font: arial;
+    outline: solid 1px salmon;
+}
+
+.linn-row{
+    flex-direction: row;
+    padding: 100px;
+    flex-wrap: wrap;
+    outline: solid 1px salmon;
 }
 
 
-@media screen and (max-width: 600px){
-    .flexbox-container{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    .oskar-column{
-        flex: 100%;
-    }
+.linn-column{
+    flex-direction: row;
+    display: flex;
+    flex: 20%;
+    outline: solid 1px salmon;
 }
+.linn-column2{
+    flex-direction: column;
+    display: flex;
+    flex: 20%;
+    outline: solid 1px salmon;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.linn-flexbox-container img{
+    border-radius: 90%;
+    width: 300px;
+    object-fit: contain;
+    outline: solid 1px salmon;
+
+}
+
 
 .skills-bar{
     width: 387px;
@@ -430,7 +474,9 @@ li:hover{
 .progress-line.mysql span{
     width: 90%;
 }
-
+.progress-line.c span{
+    width: 50%;
+}
 .bar .progress-line span::before{
     position: absolute;
     content: "";
@@ -467,6 +513,9 @@ li:hover{
 }
 .progress-line.mysql span::after{
     content: "90%";
+}
+.progress-line.c span::after{
+    content: "50%";
 }
 
 
@@ -556,5 +605,13 @@ footer{
     }
     .centered{
         font-size: 15px;
+    }
+    .oskar-flexbox-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .oskar-column{
+        flex: 100%;
     }
 }

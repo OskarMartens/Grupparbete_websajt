@@ -416,20 +416,17 @@ body {
     flex-direction: row;
     
     flex-wrap: wrap;
-    outline: solid 1px saddlebrown;
     width: 100%;
 }
 
 
 .oskar-column{
-    outline: solid 1px saddlebrown;
     display: flex;
 }
 .oskar-column2{
     display: flex;
     flex-direction: column;
     flex: 50%;
-    outline: solid 1px saddlebrown;
 }
 .name{
     display: flex;
@@ -660,7 +657,7 @@ li:hover{
     width: 65%;
 }
 #o_java.progress-line.java span{
-    width: 80%;
+    width: 80%; 
 }
 #n_html.progress-line.html span{
     width: 50%;
